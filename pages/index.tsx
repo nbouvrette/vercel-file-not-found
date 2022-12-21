@@ -18,7 +18,7 @@ export default function Home() {
         setApiResponse(result);
       })
       .catch((error) => {
-        setApiResponse("Unexpected while calling the API");
+        setApiResponse("Unexpected error while calling the API");
       });
   }, []);
 
