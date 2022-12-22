@@ -2,7 +2,7 @@ import { Config, webpackConfigurationHandler } from "next-multilingual/config";
 
 // Add extra Webpack configuration by wrapping next-multilingual's webpack handler.
 function webpack(config, context) {
-  config = webpackConfigurationHandler(config, context);
+  // config = webpackConfigurationHandler(config, context);
   config.module.rules.push(
     {
       test: /\.svg$/,
