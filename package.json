@@ -20,5 +20,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.0.7",
+    "@svgr/webpack": "^6.5.1",
+    "raw-loader": "^4.0.2"
   }
 }
