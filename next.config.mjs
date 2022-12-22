@@ -1,9 +1,4 @@
-import bundleAnalyzer from "@next/bundle-analyzer";
 import { Config, webpackConfigurationHandler } from "next-multilingual/config";
-
-const withBundleAnalyzer = bundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
-});
 
 // Add extra Webpack configuration by wrapping next-multilingual's webpack handler.
 function webpack(config, context) {
@@ -55,4 +50,4 @@ export const nextConfig = {
   },
 };
 
-export default withBundleAnalyzer(nextConfig);
+export default nextConfig;
