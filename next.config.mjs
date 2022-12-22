@@ -15,7 +15,6 @@ export const i18n = {
 
 /** @type {import('next').NextConfig} */
 export const nextConfig = {
-  outputFileTracing: false,
   experimental: {
     esmExternals: false,
     scrollRestoration: true,
