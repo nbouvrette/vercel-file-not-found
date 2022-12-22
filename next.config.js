@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
+const { getConfig } = require("next-multilingual/config");
 
-module.exports = nextConfig;
+const config = getConfig("exampleApp", ["en-US", "fr-CA"], "en-US", {
+  poweredByHeader: false,
+});
+
+module.exports = config;
